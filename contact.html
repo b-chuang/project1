@@ -17,57 +17,65 @@
     <!-- <a href="#navHome" class="skipLink">Skip to Main Content</a> -->
 
     <!-- HEADER START -->
-    <header class="contactHeaderImage clearfix">
-        <nav>
     
+            
+            <nav class="navParent clearfix">
+                <div class="wrapper">
+
             <!-- NAV LEFT -->
-            <div class="wrapper">
-                <nav class="navLeft clearfix" id="navHome">
-                    <ul>
-                        <li class="clearfix">
-                            <a href="index.html">Home</a>
-                            <a href="blog.html">Blog</a>
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- LOGO CENTER-->
-                <div class="logo">
-                    <h5>creative</h5>
+                    <nav class="navLeft clearfix" id="navHome">
+                        <ul>
+                            <li class="clearfix">
+                                <a href="index.html">Home</a>
+                                <a href="blog.html">Blog</a>
+                                <a href="#portfolio">Portfolio</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- LOGO CENTER-->
+                    <div class="logo">
+                        <h5>creative</h5>
+                    </div>
+                    <!-- NAV RIGHT -->
+                    <nav class="navRight">
+                        <ul>
+                            <li>
+                                <a href="#shop">Shop</a>
+                                <a href="#navHome">Contact</a>
+                                <a href="#search">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                                <!--search icon-->
+                                <a href="bag">
+                                    <i class="fas fa-shopping-bag"></i>
+                                </a>
+                                <!--bag icon-->
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <!-- NAV RIGHT -->
-                <nav class="navRight">
-                    <ul>
-                        <li>
-                            <a href="#shop">Shop</a>
-                            <a href="#navHome">Contact</a>
-                            <a href="#search">
-                                <i class="fas fa-search"></i>
-                            </a>
-                            <!--search icon-->
-                            <a href="bag">
-                                <i class="fas fa-shopping-bag"></i>
-                            </a>
-                            <!--bag icon-->
-                        </li>
-                    </ul>
-                </nav>
+            </nav>
+                
+            <header class="contactHeaderImage"></header>
+
+            <div class="wrapper">
+                <h2 class="contactUsHeader">contact<br>us</h2>
             </div>
-        </nav>
-
-        <h2 class="contactUsHeader">contact us</h2>
-
     </header>
     <!-- HEADER END -->
 
     <main>
-        <section class="contactDetails"> <!-- CONTACT DETAILS START -->
-            <div class="wrapper">
+        <div class="wrapper clearfix">
+            <section class="contactDetails"> <!-- CONTACT DETAILS START -->
                 <h2>contact details</h2>
-                <p>if you need any help, please contact us or send us an email or go to our forum. We are sure that you can receive our reply as soon as possible.</p>
+                <p>if you need any help, please contact us or send us an 
+                    email or go to our forum. We are sure that you can receive our reply as soon as possible.</p>
+            </section>
 
+            <section class="contactTriple">
                 <ul>
-                    <li>
+                
+                    <li class="clearfix">
                         <i class="fas fa-mobile-alt"></i>
                         <h4>phone</h4>
                         <p>Phone 01: 123 456 7890 <br> Phone 02: 345 678 9101</p>   
@@ -84,28 +92,34 @@
                         </p>
                     </li>
                 </ul>
-            </div>
-        </section> <!-- CONTACT DETAILS END -->
+            </section>
+        </div>
+        <!-- CONTACT DETAILS END -->
 
         <section class="getInTouch"> <!-- GET IN TOUCH WITH US START -->
             <div class="wrapper">
                 <h2>get in touch with us</h2>
-                <p>if you have any questions, please don't hesitate to send us a message</p>
+                <p>if you have any questions, please don't hesitate to send us a message.</p>
                 <div class="contactForm">
                     <form>
                         <label for="name" class="visuallyHidden"></label>
-                        <input type="text" placeholder="Enter your ame.." id="name">
+                        <input type="text" placeholder="Enter your name.." id="name">
                         <label for="email" class="visuallyHidden"></label>
-                        <input type="text" placeholder="yourmeail@domain.com" id="email">
+                        <input type="text" placeholder="your-email@domain.com" id="email">
                         <label for="subject" class="visuallyHidden"></label>
                         <input type="text" placeholder="Subject (Optional)" id="subject">
                         <label for="subject" class="visuallyHidden"></label>
-                        <textarea id="subjectMessage" cols="30" rows="10" placeholder="Message" name="message"></textarea>
-                        <button>send message</button>
+                        <textarea id="subjectMessage" cols="30" rows="10" placeholder="Here goes your message" name="message"></textarea>
+                        <button class="sendMessageButton">send message</button>
                     </form>
                 </div>
             </div>
         </section>
+
+        <figure class="contactBotFig">
+            <img src="assets/contact-2.jpeg" alt="Girl on the phone smiling with success">
+        </figure>
+
         
 
 
