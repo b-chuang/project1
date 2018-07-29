@@ -380,26 +380,89 @@ img.circleText {
 
 /* BLOG/ INFOTAB */
 
-.blogHeading ul li{
-    float: left;
-    display: block;
+.blogHeader ul li{
+    float: left;  
 }
+
+.blogHeader h1 {
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    margin-top: 6%;
+    margin-bottom:1%;
+}
+
+.authorNameTitle {
+    width:35%;
+}
+
+.authorImage img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
 
 .blogInfoTab {
-    clear:left;
+    float:left;
+    clear:both;
+    padding: 5% 0;
+    width: 100%;
 }
+
+.blogInfoTab li {
+    float: left;
+    /* width:calc(100% / 5 - 5%); */
+    margin:0 1%;
+}
+
+.blogInfoTab h3 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.blogInfoTab li P {
+    font-size: 1.1rem;
+}
+
+.blogDate {
+    width: 12%;
+}
+
+.blogCat {
+    width: 17%;
+}
+
+.blogTags {
+    width: 18%;
+}
+
+.blogTags ul {
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+
 
 /* BLOG/ INFOTAB AFTER */
-.blogInfoTab::after {
-    content: '';
-    max-width: 100%;
-    height: 1px;
-    background: grey;
-    position: absolute;
-    left:50%;
-    top: -7%;
+
+
+.blogPostContent {
+    clear: left;
 }
 
+.blogHeader {
+    position: relative;
+}
+
+.blogHeader::before {
+    content:"";
+    width: 100%;
+    height: 2px;
+    background: lightgrey;
+    position: absolute;
+    left:0%;
+    bottom: -190%;
+}
 
 
 
