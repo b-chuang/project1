@@ -368,18 +368,10 @@ img.circleText {
     background-size: cover;
  }  
 
- .dropLine .Wrapper {
-   
- }
+
 
 
 /* BLOG/ HEADER */
-
-
-
-
-/* BLOG/ INFOTAB */
-
 .blogHeader ul li{
     float: left;  
 }
@@ -391,6 +383,7 @@ img.circleText {
     margin-bottom:1%;
 }
 
+/* BLOG/ INFOTAB */
 .authorNameTitle {
     width:35%;
 }
@@ -442,9 +435,7 @@ img.circleText {
 }
 
 
-
-/* BLOG/ INFOTAB AFTER */
-
+/* BLOG/ INFOTAB BEFORE */
 
 .blogPostContent {
     clear: left;
@@ -465,9 +456,126 @@ img.circleText {
 }
 
 
+.blogSocialShare ul li {
+    float: left;
+    margin:1%;
+    margin-bottom: 4%;
+}
+
+.blogSocialShare ul li:nth-child(1) {
+    margin-left:0;
+}
+
+.blogSocialShare ul li i{
+    margin:20px 0;
+}
+
+.blogSocialShare ul li h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* RELATED POSTS STYLES */
+
+.relatedPosts h2 {
+    text-transform: uppercase;
+}
+
+.relatedPosts {
+    position: relative;
+}
+
+.relatedPosts::before {
+    content:"";
+    width: 100%;
+    height: 2px;
+    background: lightgrey;
+    position: absolute;
+    left: 0%;
+    bottom: 93%;
+}
+
+.relatedPosts figure {
+    padding: 2% 0;
+    margin: 0;
+    float: left;
+}
+
+
+/* COMMENTS */
+
+.blogComments {
+    position: relative;
+}
+
+.blogComments::before {
+    content:"";
+    width: 100%;
+    height: 2px;
+    background: lightgrey;
+    position: absolute;
+    left: 0%;
+    bottom: 88%;
+}
+
+.blogComments article {
+    padding-top:0;
+}
+
+.blogComments article h5 {
+    float:left;
+    text-transform: uppercase;
+}
+
+.blogComments figure {
+    padding-top: 0;
+    margin: 5% 0px;
+}
+
+.blogComments article p {
+    margin: 4% 0;
+    clear:left;
+}
+
+.blogComments article a {
+    margin:18px 21px;
+    float:left;
+}
+
+.blogComments figure img {
+    float:left;
+}
+
+.leaveComment {
+    padding-top: 3%;
+    padding-bottom:11%;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #f5f4f5;
+    border-radius: .1rem;
+    margin-left:9%;
+    padding:2%;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 15%;
+	width: 2px;
+	height: 0;
+	border: 13px solid transparent;
+	border-right-color: #f5f4f5;
+	border-left: 0;
+	margin-top: -13px;
+	margin-left: -13px;
+}
+
 
 /* CONTACT HEADER START*/
-
 
 h2.contactUsHeader{
     float:left;
