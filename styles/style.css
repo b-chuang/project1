@@ -27,6 +27,9 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+}
 }
 
 ul {
@@ -83,7 +86,7 @@ nav {
 
 .navRight {
     float: right;
-    width: 21%;
+    width: 24%;
 }
 
 .logo {
@@ -127,6 +130,18 @@ nav li a:hover {
     text-decoration: line-through;
 }
 
+.fa-shopping-bag {
+    position: relative;
+}
+
+.itemGreenCircle {
+    display: inline-block;
+    position: absolute;
+    width:10px;
+    height:10px;
+    background:#BBD4AE;
+    border-radius: 50%; 
+}
 
 
 /* HOME/ BRAND --> change taget selectors to sectionBrand? */
@@ -170,7 +185,7 @@ img.circleText {
 }
 
 .sectionTwoText {
-    width: 50%;
+    width: 58%;
     margin: 0 auto;
     padding-top: 3%;
 }
@@ -232,6 +247,10 @@ img.circleText {
     right: -50%
 }
 
+.flickityMid {
+    margin:25% 0;
+}
+
 .flickityMid img{
     width: 50%;
     margin: 0 auto;
@@ -240,8 +259,10 @@ img.circleText {
 }
 
 .flickityMid p {
-    padding-top:5%;
+    padding-top:7%;
     text-align: center;
+    width:650px;
+    margin-left: -20%;
 }
 
 
@@ -277,6 +298,8 @@ img.circleText {
 .sectionFeatures h3 {
     margin:0;
     text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 
@@ -311,7 +334,18 @@ img.circleText {
     display: inline-block;
     width: calc(50% - 6%);
     padding:3%;
+}
 
+.meetTeamTopDescription h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 10%;
+    letter-spacing: 2px;
+}
+
+.meetTeamTopDescription p {
+    /* word-spacing: 3px; */
+    line-height:135%;
 }
 
 .meetTeam:before{
@@ -329,9 +363,6 @@ img.circleText {
     
 }
 
-/* .meetTeamImage {
-    padding:0;
-} */
 
 .meetTeamImage img {
    width:100%; 
@@ -350,29 +381,36 @@ img.circleText {
  .meetTeam li {
      float:left;
      list-style: none;
-     margin:20px;
-     width:calc(25% - 40px);
+     margin:15px;
+     width:calc(25% - 30px);
      height:25rem;
  }
 
  .larry {
      background-image:url(../assets/home-5.jpeg);
- }
+ }/*//trying out, practicing to use background fill */
 
  .meetTeam li.meetTeamTopDescription{
      background: #F6F6F6;
-     margin:20px;
-     width:calc(50% - 40px);
+     margin:15px;
+     width:calc(50% - 30px);
      height:25rem;
  }
 
  .workWithUs {
     background: #F6F6F6;
     height: 25rem;
+    padding: 3%;
+    text-align: center;
  }
 
   .workWithUs h3 {
+      margin-top: 35%;
+      font-weight: 500;
+      text-transform: uppercase;
  }
+
+ 
 
 
  /* HOME/ DROP US A LINE SECTION */
@@ -395,7 +433,35 @@ img.circleText {
     background-size: cover;
  }  
 
+ .dropLineText {
+     margin-top:50%;
+     text-align: center;
+ }
 
+ .dropLineText h2 {
+     text-transform: uppercase;
+     font-weight: 500;
+ }
+
+ .dropLineText p{
+    width:74%;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    margin-bottom:3%;
+    line-height: 23px;
+ }
+
+ .dropLineText a {
+     display: inline-block;
+     padding: 3%;
+     text-transform: uppercase;
+     font-weight: 700;
+     width:200px;
+     height: 50px;
+     margin-top:5%;
+     background-color:#FFFFFF; 
+
+ }
 
 
 /* BLOG/ HEADER */
@@ -524,11 +590,65 @@ img.circleText {
 }
 
 .relatedPosts figure {
-    padding: 2% 0;
-    margin: 0;
     float: left;
+    margin-left:0;
+    width: calc(100% / 3 - 40px);
+    padding: 0;   
+    margin-top: 4%; 
+    
 }
 
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.relatedPosts figure img {
+    width:100%;
+}
+
+figure .figDate {
+    margin: 7% 0;
+}
+
+figure {
+    margin-bottom:8%;
+}
 
 /* COMMENTS */
 
@@ -543,7 +663,7 @@ img.circleText {
     background: lightgrey;
     position: absolute;
     left: 0%;
-    bottom: 88%;
+    bottom: 91%;
 }
 
 .blogComments article {
@@ -577,7 +697,7 @@ img.circleText {
 
 .leaveComment {
     padding-top: 3%;
-    padding-bottom:11%;
+    padding-bottom:15%;
 }
 
 .speech-bubble {
@@ -606,19 +726,47 @@ img.circleText {
 }
 
 
+.contactDetails {
+    position: relative;
+    margin-top:15%;
+}
 
-	/* content: '';
-	position: absolute;
-	left: 0;
-	top: 15%;
-	width: 2px;
-	height: 0;
-	border: 13px solid transparent;
-	border-right-color: #f5f4f5;
-	border-left: 0;
-	margin-top: -13px;
-	margin-left: -13px;
-} */
+
+.contactDetails::before {
+    margin: 10% 0;
+    content:" ";
+    width: 2px;
+    height: 250px;
+    position: absolute;
+    top: 40px;
+    left:33%;
+    background: lightgrey;
+}
+
+.contactDetails h2 {
+    text-transform: uppercase;
+}
+.contactDetails p {
+    width:calc(100% / 2);
+    margin-bottom: 10%;
+}
+
+
+.contactTriple ul {
+    position: relative;
+}
+
+.contactTriple ul li::before {
+    margin: 10% 0;
+    content:" ";
+    width: 2px;
+    height: 250px;
+    position: absolute;
+    top: -155px;
+    left:62%;
+    background: lightgrey;
+}
+
 
 
 /* CONTACT HEADER START*/
@@ -634,28 +782,22 @@ h2.contactUsHeader{
 
 .contactUsHeader {
     position: relative;
+   
 }
 
 .contactUsHeader::before {
+    margin: 10% 0;
     content:" ";
-    width: 30px;
-    height: 3px;
+    width: 45px;
+    height: 4px;
     position: absolute;
-    top:-20%;
+    top: -65%;
     left:0%;
     background: #555;
 }
 
-.contactDetails {
-    margin: 10% 0;
-}
 
-.contactDetails h2 {
-    text-transform: uppercase;
-}
-.contactDetails p {
-    width:calc(100% / 2);
-}
+
 
 .contactTriple {
     width: 100%;
@@ -668,7 +810,11 @@ h2.contactUsHeader{
 }
 
 .contactTriple ul li i{
-    font-size: 30px;
+    font-size: 45px;
+}
+
+.contactTriple ul li h4 {
+    text-transform:uppercase;
 }
 
 
@@ -694,10 +840,10 @@ input[type=text], textarea, button {
 }
 
 input[type=text] {
-    width: calc(100% / 3 - 3%);
+    width: calc(100% / 3 - 14px);
     padding: 1%;
     padding-left:0%;
-    margin-right: 2%;
+    margin-right: 10px;
 }
 
 textarea {
@@ -711,6 +857,11 @@ textarea {
 button {
     text-transform: uppercase;
     padding: 0;
+}
+
+button:hover {
+    cursor: pointer;
+    font-weight:800;
 }
 
 
@@ -728,6 +879,7 @@ button {
 .contactBotFig {
     margin:0;
     line-height: 0;
+    margin-top:7%;
 }
 
 
@@ -737,11 +889,20 @@ button {
  footer {
     background: rgb(51, 51, 51);
     color: white; 
+    padding:1%;
+    padding-top:40px;
+    
  }
 
  footer h3 {
      text-transform: uppercase;
-     font-size: 1.4rem;
+     font-size: 1.6rem;
+     font-weight: 500;
+     margin-top:10%;
+     margin-bottom:10%;
+     
+
+
  }
 
  footer a {
@@ -749,6 +910,7 @@ button {
 }
 
 footer li {
+    display:inline-block;
     padding-bottom: 3px; 
     font-size: 1.3rem;
 }
@@ -759,7 +921,11 @@ footer li {
      width:100%;
  }
 
- .footerSocial a {
+ .footerSocial {
+    margin-top:30px;
+ }
+
+ .footerSocial a { 
     padding: 20px 20px 20px 0;
  }
 
@@ -768,13 +934,39 @@ footer li {
      float: left;
  }
 
+ .footerContactUs ul {
+     margin-top:0;
+     padding-left: 0;
+     display: inline-block;
+     width:230px;
+ }
+
+
+ .footerRecentPosts a:hover{
+    font-weight:700;
+}
+
+.footerRecentPosts ul {
+    padding-left: 20%;
+    
+}
+
  .footerRecentPosts h3{
      text-align: center;
  }
 
 .footerRecentPosts li {
-     list-style: disc;
+     
  }
+
+.footerSubscribeNow {
+    text-align: right;
+}
+
+.footerSubscribeNow p {
+    margin:7% 0;
+}
+
 
  .footerBottom {
      width: 100%;
@@ -782,7 +974,47 @@ footer li {
      clear:left;
      margin: 0 auto;
      text-align: center;
-
+     position: relative;
  }
+
+ .footerBottom h3 {
+     margin-bottom:3%;
+     letter-spacing:1.1rem;
+ }
+
+ .footerBottom::before {
+    margin: 10% 0;
+    content:" ";
+    width: 103%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left:-2%;
+    background:#3A3A3A;
+ }
+
+
+ .footerEmail {
+     margin-right:8%;
+ }
+
+
+ input {
+    border-style: none;
+    height: 33px;
+    float: right;
+    margin-right:0px;
+}
+
+ input[type="email"] {
+    padding: 0 50px 0 15px;
+    color: rgb(153, 153, 153)
+}
+
+input[type="submit"] {
+    padding: 0 12px;
+    background: rgb(195, 218, 183);
+    font-size: 2.1rem;
+}
 
  
