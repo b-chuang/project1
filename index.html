@@ -23,11 +23,17 @@
             <!-- NAV LEFT -->
             <div class="wrapper">
                 <nav class="navLeft clearfix" id="navHome">
-                    <ul>
-                        <li class ="clearfix">
+                    <ul class="clearfix">
+                        <li class ="navLeftStrike clearfix">
                             <a href="#navHome">Home</a>
+                        </li>
+                        <li class="navLeftStrike clearfix">
+                            
                             <a href="blog.html">Blog</a>
-                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="portfolio clearfix">
+                            
+                            <a  href="#portfolio">Portfolio</a>
                         </li>
                     </ul>
                 </nav>
@@ -36,24 +42,28 @@
                     <h5>creative</h5>
                 </div>
                 <!-- NAV RIGHT -->
-                <nav class="navRight">
+                <nav class="navRight clearfix">
                     <ul>
-                        <li>
+                        <li class ="navRightStrike clearfix">
                             <a href="#shop">Shop</a>
+                        </li>
+                        <li class="navRightStrikeContact">
                             <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
                             <a href="#search">
                                 <i class="fas fa-search"></i>
                             </a>
+                        </li>
                             <!--search icon-->
-                            <a href="bag">
+                        <li>
+                            <a href="#bag">
                                 <i class="fas fa-shopping-bag">
                                     <div class=itemGreenCircle><p>2</p>
                                     </div>
-
                                 </i>
                             </a>
-                            <!--bag icon-->
-                        </li>
+                        </li><!--bag icon-->
                     </ul>
                 </nav>
             </div>
@@ -259,7 +269,7 @@
         <!-- FOOTER START -->
         <footer>
             <footer class="footerMain">
-                <div class="wrapper">
+                <div class="wrapper clearfix">
                     <div class="footerContactUs">
                         <h3>contact us</h3>
                         <ul>
@@ -313,7 +323,7 @@
                     <div class="footerSubscribeNow">
                         <h3>subscribe now</h3>
                         <p>Signup for emails and notification below.</p>
-                        <form action="" class="clearfix">
+                        <form action="" class="footerEmail clearfix">
                             <input type="submit" value="➞">
                             <input type="email" placeholder="Enter your email">
                         </form>

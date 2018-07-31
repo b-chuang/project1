@@ -13,7 +13,6 @@ html {
 }
 
 
-
 body {
     font-family: 'Montserrat', 'Open Sans', sans-serif;
     font-size: 1.6rem;
@@ -30,10 +29,8 @@ a {
     color: inherit;
     text-decoration: none;
 }
-}
 
 ul {
-    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -86,15 +83,15 @@ nav {
 
 .navRight {
     float: right;
-    width: 24%;
+    width: 31%;
 }
 
 .logo {
-    width: 38%;
+    width: 35%;
     margin: 0 auto;
     padding-top: 1%;
     float:left;
-   
+    margin-left:20px;
 }
 
 .logo h5 {
@@ -106,42 +103,188 @@ nav {
     font-weight: 600;
     padding-top:1%;
 }
-
-
-
 /* NAV LINKS */
-
 nav li {
-    width: 100%;
-    list-style: none;
-
+    /* width: calc((100% / 3) - 20px); */
+    /* list-style: none; */
+    float:left;
+    margin:10px;
 }
-nav li a {
 
+.navLeft li:nth-of-type(1), .navLeft li:nth-of-type(2) {
+    width:calc((60% / 2) - 20px);
+    
+}
+
+.navLeft li:nth-of-type(3) {
+    width:calc(40% - 20px);
+}
+
+
+.navRight li:nth-of-type(1), .navRight li:nth-of-type(2) {
+    width:calc((80% / 2) - 20px);
+   
+}
+
+
+
+.navRight li:nth-of-type(3), .navRight li:nth-of-type(4) {
+    
+    width:calc((20% / 2) - 20px);
+}
+
+nav li a {
     text-decoration: none;
     margin: 0 3%;
     text-transform: uppercase;
     color: black;
     height:2px;
-
+    padding:10px 0;
+    margin-left:15px;
 }
 
 nav li a:hover {
     text-decoration: line-through;
 }
+.navLeftStrike a::before {
+    content:" ";
+    width:calc(100%);
+    height:2px;
+    background-color: darkgrey; 
+    position: absolute;
+    top: 49px;
+    display:none;
+}
+.navLeftStrike a:hover:before {
+    content:" ";
+    width:86%;
+    height:2px;
+    background-color: #4D4C4C; 
+    position: absolute;
+    top: 8px;
+    display:inline-block;
+    transform: translateX(-15%);
+}
+
+
+.navRightStrike a::before {
+    content:" ";
+    width:88%;
+    height:2px;
+    background-color: darkgrey; 
+    position: absolute;
+    top: 49px;
+    display:none;
+}
+
+.navRightStrike a:hover::before {
+    content:"";
+    width:78%;
+    height:2px;
+    background-color: #4D4C4C; 
+    position: absolute;
+    top: 8px;
+    display:inline-block;
+    transform: translateX(-15%);
+}
+
+.navRightStrikeContact a::before {
+    content:" ";
+    width:103%;
+    height:2px;
+    background-color: darkgrey; 
+    position: absolute;
+    top: 49px;
+    display:none;
+    left:15%;
+}
+
+.navRightStrikeContact a:hover::before {
+    content:"";
+    width:103%;
+    height:2px;
+    background-color: #4D4C4C; 
+    position: absolute;
+    top: 8px;
+    display:inline-block;
+    transform: translateX(-15%);
+    left:15%;
+}
+
+.portfolio a::before {
+    content:"";
+    width:100%;
+    height:2px;
+    background-color: #4D4C4C; 
+    position: absolute;
+    top: 8px;
+    display:none;
+    transform: translateX(-15%);
+    left:18%;
+
+}
+
+.portfolio a:hover::before {
+    content:"";
+    width:100%;
+    height:2px;
+    background-color: #4D4C4C; 
+    position: absolute;
+    top: 8px;
+    display:inline-block;
+    transform: translateX(-15%);
+    left:18%;
+}
+
+
+.navLeft li {
+    position: relative;
+    text-align: center;
+    /* width:146px; */
+}
+
+
+.navLeft ul {
+    width: 100%;
+    height:40px;
+    padding:0;
+}
+
+.navRight li {
+    position: relative;
+    text-align: center;
+}
+
+.navRight ul {
+    width: 85%;
+    height:40px;
+    padding:0;
+}
+
 
 .fa-shopping-bag {
     position: relative;
 }
-
 .itemGreenCircle {
     display: inline-block;
     position: absolute;
-    width:10px;
-    height:10px;
+    top:60%;
+    left:56%;
+    width:13px;
+    height:13px;
     background:#BBD4AE;
     border-radius: 50%; 
+    
 }
+.itemGreenCircle p {
+    font-weight: 400;
+    position: absolute;
+    font-size: 1rem;
+    font-family:'Montserrat', 'Opens sans', sans-serif;
+    top:-8px;
+    left:3px;
+}
+
 
 
 /* HOME/ BRAND --> change taget selectors to sectionBrand? */
@@ -229,7 +372,7 @@ img.circleText {
 }
 
 .arrow a {
-    list-style: none;
+    /* list-style: none; */
     text-decoration: none;
 }
 
@@ -289,7 +432,7 @@ img.circleText {
 }
 
 .sectionFeatures ul li {
-    list-style: none;
+    /* list-style: none; */
     float: left;
     width: calc(50% - 10%);
     margin:5%;
@@ -301,7 +444,6 @@ img.circleText {
     font-size: 14px;
     font-weight: 500;
 }
-
 
 
 .sectionFeaturesIcon {
@@ -317,8 +459,9 @@ img.circleText {
 }
 
 .sectionFeaturesText {
-    font-size:10px;
+    font-size:1.1rem;
     margin-left: 70px;
+    line-height:15.1px;
 }
 
 /* HOME/ MEET OUR TEAM */
@@ -380,7 +523,7 @@ img.circleText {
 
  .meetTeam li {
      float:left;
-     list-style: none;
+     /* list-style: none; */
      margin:15px;
      width:calc(25% - 30px);
      height:25rem;
@@ -520,9 +663,11 @@ img.circleText {
 
 .blogTags {
     width: 18%;
+    
 }
 
 .blogTags ul {
+    padding-left:0;
     font-size: 1.1rem;
     width: 100%;
 }
@@ -532,6 +677,10 @@ img.circleText {
 
 .blogPostContent {
     clear: left;
+}
+
+.blogPostContent {
+    line-height: 30px;
 }
 
 .blogHeader {
@@ -548,6 +697,10 @@ img.circleText {
     bottom: -190%;
 }
 
+
+.blogSocialShare ul{
+    padding-left:0;
+}
 
 .blogSocialShare ul li {
     float: left;
@@ -763,10 +916,14 @@ figure {
     height: 250px;
     position: absolute;
     top: -155px;
-    left:62%;
+    left:660px;
     background: lightgrey;
 }
 
+
+.contactTriple ul li {
+    margin-left:-20px;
+}
 
 
 /* CONTACT HEADER START*/
@@ -804,6 +961,8 @@ h2.contactUsHeader{
     margin-left: 8%;
 }
 
+
+
 .contactTriple ul li{
     float:left;
     width:calc(100% / 3);
@@ -815,6 +974,10 @@ h2.contactUsHeader{
 
 .contactTriple ul li h4 {
     text-transform:uppercase;
+}
+
+li.envContact {
+    margin-left:10px;
 }
 
 
@@ -843,7 +1006,7 @@ input[type=text] {
     width: calc(100% / 3 - 14px);
     padding: 1%;
     padding-left:0%;
-    margin-right: 10px;
+    margin-right: 14px;
 }
 
 textarea {
@@ -910,7 +1073,6 @@ button:hover {
 }
 
 footer li {
-    display:inline-block;
     padding-bottom: 3px; 
     font-size: 1.3rem;
 }
@@ -921,17 +1083,25 @@ footer li {
      width:100%;
  }
 
- .footerSocial {
-    margin-top:30px;
- }
+ /* footerSocial {
+    margin-top:50px;
+ } */
 
  .footerSocial a { 
     padding: 20px 20px 20px 0;
  }
 
+ .footerSocial li {
+     display: inline-block;
+     margin-top:10px;
+
+ }
+
  .footerContactUs, .footerRecentPosts, .footerSubscribeNow {
-     width: 33.33%;
+     width: 30%;
      float: left;
+     line-height: 20px;
+     margin-left:4%;
  }
 
  .footerContactUs ul {
@@ -941,22 +1111,26 @@ footer li {
      width:230px;
  }
 
+ .footerRecentPosts {
+     margin-left:20px;
+ }
 
  .footerRecentPosts a:hover{
     font-weight:700;
 }
 
-.footerRecentPosts ul {
-    padding-left: 20%;
-    
+
+.footerRecentPosts ul li {
+    list-style: disc;
 }
 
  .footerRecentPosts h3{
      text-align: center;
+     margin-right:100px;
  }
 
-.footerRecentPosts li {
-     
+.footerRecentPosts li a {
+    float:left
  }
 
 .footerSubscribeNow {
@@ -964,7 +1138,7 @@ footer li {
 }
 
 .footerSubscribeNow p {
-    margin:7% 0;
+    margin:5% 0;
 }
 
 
@@ -978,7 +1152,7 @@ footer li {
  }
 
  .footerBottom h3 {
-     margin-bottom:3%;
+     margin-bottom:1%;
      letter-spacing:1.1rem;
  }
 
@@ -986,16 +1160,16 @@ footer li {
     margin: 10% 0;
     content:" ";
     width: 103%;
-    height: 1px;
+    height: 2px;
     position: absolute;
     top: 0;
     left:-2%;
-    background:#3A3A3A;
+    background:#4D4C4C;
  }
 
 
  .footerEmail {
-     margin-right:8%;
+     margin-right:0px;
  }
 
 
@@ -1011,10 +1185,19 @@ footer li {
     color: rgb(153, 153, 153)
 }
 
+
+
 input[type="submit"] {
     padding: 0 12px;
     background: rgb(195, 218, 183);
     font-size: 2.1rem;
+}
+
+input[type="submit"]:hover {
+    padding: 0 12px;
+    background: rgb(195, 218, 183);
+    font-size: 2.1rem;
+    cursor: pointer;
 }
 
  

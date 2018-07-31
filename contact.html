@@ -17,50 +17,60 @@
     <!-- <a href="#navHome" class="skipLink">Skip to Main Content</a> -->
 
     <!-- HEADER START -->
+    <header class="mainHeaderImage clearfix">
+        <nav>
     
-            
-            <nav class="navParent clearfix">
-                <div class="wrapper">
-
             <!-- NAV LEFT -->
-                    <nav class="navLeft clearfix" id="navHome">
-                        <ul>
-                            <li class="clearfix">
-                                <a href="index.html">Home</a>
-                                <a href="blog.html">Blog</a>
-                                <a href="#portfolio">Portfolio</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- LOGO CENTER-->
-                    <div class="logo">
-                        <h5>creative</h5>
-                    </div>
-                    <!-- NAV RIGHT -->
-                    <nav class="navRight">
-                        <ul>
-                            <li>
-                                <a href="#shop">Shop</a>
-                                <a href="#navHome">Contact</a>
-                                <a href="#search">
-                                    <i class="fas fa-search"></i>
-                                </a>
-                                <!--search icon-->
-                                <a href="bag">
-                                    <i class="fas fa-shopping-bag"></i>
-                                </a>
-                                <!--bag icon-->
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </nav>
-                
-            <header class="contactHeaderImage"></header>
-
             <div class="wrapper">
-                <h2 class="contactUsHeader">contact<br>us</h2>
+                <nav class="navLeft clearfix" id="navHome">
+                    <ul class="clearfix">
+                        <li class="navLeftStrike clearfix">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="navLeftStrike clearfix">
+    
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li class="portfolio clearfix">
+    
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- LOGO CENTER-->
+                <div class="logo">
+                    <h5>creative</h5>
+                </div>
+                <!-- NAV RIGHT -->
+                <nav class="navRight clearfix">
+                    <ul>
+                        <li class="navRightStrike clearfix">
+                            <a href="#shop">Shop</a>
+                        </li>
+                        <li class="navRightStrikeContact">
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#search">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
+                        <!--search icon-->
+                        <li>
+                            <a href="#bag">
+                                <i class="fas fa-shopping-bag">
+                                    <div class=itemGreenCircle>
+                                        <p>2</p>
+                                    </div>
+                                </i>
+                            </a>
+                        </li>
+                        <!--bag icon-->
+                    </ul>
+                </nav>
             </div>
+        </nav>
+    
     </header>
     <!-- HEADER END -->
 
@@ -85,7 +95,7 @@
                         <h4>address</h4>
                         <p>6591 Orchard Street, Toronto Ontario</p>
                     </li>
-                    <li>
+                    <li class="envContact">
                         <i class="fas fa-envelope"></i>
                         <h4>email</h4>
                         <p>contact@creative.com<br>info@creative.com
@@ -187,7 +197,7 @@
                 <div class="footerSubscribeNow">
                     <h3>subscribe now</h3>
                     <p>Signup for emails and notification below.</p>
-                    <form action="" class="clearfix">
+                    <form action="POST" class="footerEmail clearfix">
                         <input type="submit" value="➞">
                         <input type="email" placeholder="Enter your email">
                     </form>
