@@ -12,11 +12,9 @@ html {
     font-size: 62.5%;
 }
 
-
 body {
     font-family: 'Montserrat', 'Open Sans', sans-serif;
-    font-size: 1.6rem;
-       /* font-family: 'Open Sans', sans-serif; */
+    font-size: 1.5rem;
 }
 
 .wrapper {
@@ -41,6 +39,34 @@ li {
     padding: 0;
 }
 
+h2 {
+    text-transform: uppercase;
+}
+
+/* ACCESSIBILITY */
+.skipLink {
+    position: absolute;
+    display:none;
+}
+
+.skipLink:focus {
+  border:1px solid black;
+}
+
+/*VISUALLY HIDDEN*/
+.visuallyhidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* HEADER IMG STYLES */
 .mainHeaderImage { 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url(../assets/home-1.jpeg);
@@ -55,7 +81,7 @@ li {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url(../assets/contact-1.jpeg);
     /* background-size: cover; */
     /* background-attachment: fixed;  */
-    height:18vw;
+    height:21vw;
     min-height: 20vh;
     background-position: bottom;
     background-repeat: no-repeat;    
@@ -86,6 +112,31 @@ nav {
     width: 31%;
 }
 
+
+.navLeft li {
+    position: relative;
+    text-align: center;
+    /* width:146px; */
+}
+
+.navLeft ul {
+    width: 100%;
+    height:40px;
+    padding:0;
+}
+
+.navRight li {
+    position: relative;
+    text-align: center;
+}
+
+.navRight ul {
+    width: 85%;
+    height:40px;
+    padding:0;
+}
+
+
 .logo {
     width: 35%;
     margin: 0 auto;
@@ -103,35 +154,13 @@ nav {
     font-weight: 600;
     padding-top:1%;
 }
+
 /* NAV LINKS */
 nav li {
-    /* width: calc((100% / 3) - 20px); */
-    /* list-style: none; */
     float:left;
     margin:10px;
 }
 
-.navLeft li:nth-of-type(1), .navLeft li:nth-of-type(2) {
-    width:calc((60% / 2) - 20px);
-    
-}
-
-.navLeft li:nth-of-type(3) {
-    width:calc(40% - 20px);
-}
-
-
-.navRight li:nth-of-type(1), .navRight li:nth-of-type(2) {
-    width:calc((80% / 2) - 20px);
-   
-}
-
-
-
-.navRight li:nth-of-type(3), .navRight li:nth-of-type(4) {
-    
-    width:calc((20% / 2) - 20px);
-}
 
 nav li a {
     text-decoration: none;
@@ -237,28 +266,26 @@ nav li a:hover {
 }
 
 
-.navLeft li {
-    position: relative;
-    text-align: center;
-    /* width:146px; */
+.navLeft li:nth-of-type(1), .navLeft li:nth-of-type(2) {
+    width:calc((60% / 2) - 20px);
+    
+}
+
+.navLeft li:nth-of-type(3) {
+    width:calc(40% - 20px);
 }
 
 
-.navLeft ul {
-    width: 100%;
-    height:40px;
-    padding:0;
+.navRight li:nth-of-type(1), .navRight li:nth-of-type(2) {
+    width:calc((80% / 2) - 20px);
+   
 }
 
-.navRight li {
-    position: relative;
-    text-align: center;
-}
 
-.navRight ul {
-    width: 85%;
-    height:40px;
-    padding:0;
+
+.navRight li:nth-of-type(3), .navRight li:nth-of-type(4) {
+    
+    width:calc((20% / 2) - 20px);
 }
 
 
@@ -287,7 +314,7 @@ nav li a:hover {
 
 
 
-/* HOME/ BRAND --> change taget selectors to sectionBrand? */
+/* HOME/ SECTION TWO */
 
 .sectionTwo {
      padding-bottom:10%;
@@ -335,14 +362,14 @@ img.circleText {
 
 .sectionTwoTextLeft {
     float:left;
-    width: 50%;
+    width: 47%;
     text-align: center;
 }
 
 .sectionTwoTextRight {
     text-align: center;
     float:right;
-    width: 50%;
+    width: 47%;
 }
 
 .sectionTwoText h3 {
@@ -372,7 +399,6 @@ img.circleText {
 }
 
 .arrow a {
-    /* list-style: none; */
     text-decoration: none;
 }
 
@@ -428,11 +454,10 @@ img.circleText {
 .sectionFeatures ul {
     padding: 100px 0;
     width: 50%;
-    margin-left: 55%;
+    margin-left: 50%;
 }
 
 .sectionFeatures ul li {
-    /* list-style: none; */
     float: left;
     width: calc(50% - 10%);
     margin:5%;
@@ -487,7 +512,6 @@ img.circleText {
 }
 
 .meetTeamTopDescription p {
-    /* word-spacing: 3px; */
     line-height:135%;
 }
 
@@ -514,7 +538,6 @@ img.circleText {
  .meetTeam h2 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
     font-weight: 100;
     margin-top:3%;
     margin-bottom:4%;
@@ -577,12 +600,11 @@ img.circleText {
  }  
 
  .dropLineText {
-     margin-top:50%;
+     margin-top:43%;
      text-align: center;
  }
 
  .dropLineText h2 {
-     text-transform: uppercase;
      font-weight: 500;
  }
 
@@ -605,6 +627,7 @@ img.circleText {
      background-color:#FFFFFF; 
 
  }
+
 
 
 /* BLOG/ HEADER */
@@ -722,11 +745,10 @@ img.circleText {
     font-style: normal;
 }
 
-/* RELATED POSTS STYLES */
 
-.relatedPosts h2 {
-    text-transform: uppercase;
-}
+
+/* BLOG/ RELATED POSTS STYLES */
+
 
 .relatedPosts {
     position: relative;
@@ -803,7 +825,7 @@ figure {
     margin-bottom:8%;
 }
 
-/* COMMENTS */
+/* BLOG/ COMMENTS */
 
 .blogComments {
     position: relative;
@@ -818,6 +840,7 @@ figure {
     left: 0%;
     bottom: 91%;
 }
+
 
 .blogComments article {
     padding-top:0;
@@ -851,6 +874,25 @@ figure {
 .leaveComment {
     padding-top: 3%;
     padding-bottom:15%;
+    position:relative;
+}
+
+h2.leaveComment {
+    margin-top:2%;
+}
+
+.commentForm {
+    margin-top:6%;
+}
+
+.commentForm:before {
+    content:"";
+    width: 100%;
+    height: 2px;
+    background: lightgrey;
+    position: absolute;
+    left: 0%;
+    bottom: 85%;
 }
 
 .speech-bubble {
@@ -896,12 +938,46 @@ figure {
     background: lightgrey;
 }
 
-.contactDetails h2 {
-    text-transform: uppercase;
-}
+
 .contactDetails p {
     width:calc(100% / 2);
     margin-bottom: 10%;
+}
+
+
+/* CONTACT/ HEADER START*/
+
+h2.contactUsHeader{
+    float:left;
+    clear:both;
+    font-size: 5.6rem;
+    position:absolute;
+    top:22%;
+    width: 45px;
+}
+
+.contactUsHeader {
+    position: relative;
+   
+}
+
+.contactUsHeader::before {
+    margin: 10% 0;
+    content:" ";
+    width: 35px;
+    height: 4px;
+    position: absolute;
+    top: -60%;
+    left:0%;
+    background: #555;
+}
+
+
+
+
+.contactTriple {
+    width: 100%;
+    margin-left: 8%;
 }
 
 
@@ -922,51 +998,11 @@ figure {
 
 
 .contactTriple ul li {
+    float:left;
+    width:calc(100% / 3);
     margin-left:-20px;
 }
 
-
-/* CONTACT HEADER START*/
-
-h2.contactUsHeader{
-    float:left;
-    clear:both;
-    font-size: 5.6rem;
-    text-transform: uppercase;
-    position:absolute;
-    top:24%;
-}
-
-.contactUsHeader {
-    position: relative;
-   
-}
-
-.contactUsHeader::before {
-    margin: 10% 0;
-    content:" ";
-    width: 45px;
-    height: 4px;
-    position: absolute;
-    top: -65%;
-    left:0%;
-    background: #555;
-}
-
-
-
-
-.contactTriple {
-    width: 100%;
-    margin-left: 8%;
-}
-
-
-
-.contactTriple ul li{
-    float:left;
-    width:calc(100% / 3);
-}
 
 .contactTriple ul li i{
     font-size: 45px;
@@ -989,10 +1025,6 @@ li.envContact {
 
 .getInTouch {
     margin-top: 8%;
-}
-
-.getInTouch h2{
-    text-transform: uppercase;
 }
 
 input[type=text], textarea, button {
@@ -1026,8 +1058,6 @@ button:hover {
     cursor: pointer;
     font-weight:800;
 }
-
-
 
 
 .contactBotFig img {
@@ -1083,9 +1113,6 @@ footer li {
      width:100%;
  }
 
- /* footerSocial {
-    margin-top:50px;
- } */
 
  .footerSocial a { 
     padding: 20px 20px 20px 0;
@@ -1101,7 +1128,7 @@ footer li {
      width: 30%;
      float: left;
      line-height: 20px;
-     margin-left:4%;
+     margin-left:2%;
  }
 
  .footerContactUs ul {
@@ -1112,7 +1139,7 @@ footer li {
  }
 
  .footerRecentPosts {
-     margin-left:20px;
+     margin-left:65px;
  }
 
  .footerRecentPosts a:hover{
